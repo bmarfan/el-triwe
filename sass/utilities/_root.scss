@@ -8,4 +8,5 @@
     @each $color, $value in $dark{
         --dark-#{$color}: #{$value};
     }
+
 }
