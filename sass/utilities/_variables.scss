@@ -1,0 +1,59 @@
+// colores del accent
+$accent-1: #143601;
+$accent-2: #1A4301;
+$accent-3: #245501;
+$accent-4: #538D22;
+$accent-5: #73A942;
+$accent-6: #73A942;
+
+// colores accent map
+$accent: (
+    "1": $accent-1,
+    "2": $accent-2,
+    "3": $accent-3,
+    "4": $accent-4,
+    "5": $accent-5,
+    "6": $accent-6
+);
+
+//colores background
+$back-1: #FFFDF6;
+$back-2: #FAF6E9;
+$back-3: #ECE8D9;
+
+//colores background map
+$backround:(
+    "primary": $back-1,
+    "secundary": $back-2,
+    "tertiary": $back-3,
+);
+
+//colores oscuros
+$dark-1: #212529;
+$dark-2: #343A40;
+$dark-3: #494949;
+
+//colores oscuros map
+$dark:(
+    "back-1": $dark-1,
+    "back-2": $dark-2,
+    "back-3": $dark-3,
+);
+
+//Componentes comunes
+//border
+$border-width: 1px;
+$border-style: solid;
+$border-radius: .5rem;
+$border-radius-l: 1rem;
+
+//shadow
+$box-shadow: 3px -3px 10px -2px rgb($dark-1, .05) ;
+$text-shadow: 0px 0px 4px rgb($dark-1, .5) ;
+
+//transitions
+$transition: .5s ease-in-out;
+
+//fonts
+$font-family: acumin-pro, sans-serif;
+$font-size: 1rem;

@@ -1,0 +1,11 @@
+:root{
+    @each $color, $value in $accent{
+        --accent-#{$color}: #{$value};
+    }
+    @each $color, $value in $backround{
+        --background-#{$color}: #{$value};
+    }
+    @each $color, $value in $dark{
+        --dark-#{$color}: #{$value};
+    }
+}
