@@ -1,10 +1,10 @@
-/*Tamaños*/
+//Tamaños
 @mixin sizes($width, $height){
     width: $width;
     height: $height;
 }
 
-/*Gradientes*/
+//Gradientes
 @mixin gradient($start-color, $mid-color, $color-stop: 50%, $end-color){
     background-image: linear-gradient(to right, $start-color, $mid-color $color-stop, $end-color);
 }
@@ -12,8 +12,16 @@
     background-image: linear-gradient($deg, $start-color, $end-color);
 }
 
-/*Listas*/
+//Listas
 @mixin list{
     list-style: none;
     padding-left: 0;
+}
+
+//Transparencias
+@mixin box-shadow($color, $opacity){
+    box-shadow: var(--box-shadow) rgb($color, $opacity);
+}
+@mixin text-shadow($color, $opacity){
+    text-shadow: var(--text-shadow) rgb($color, $opacity);
 }

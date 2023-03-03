@@ -1,4 +1,6 @@
 :root{
+
+    //colores
     @each $color, $value in $accent{
         --accent-#{$color}: #{$value};
     }
@@ -8,5 +10,11 @@
     @each $color, $value in $dark{
         --dark-#{$color}: #{$value};
     }
+    
+    //font
+    
 
+    //sombras
+    --box-shadow: #{$box-shadow-px};
+    --text-shadow: #{$text-shadow-px};
 }
