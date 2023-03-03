@@ -1,0 +1,19 @@
+/*Tamaños*/
+@mixin sizes($width, $height){
+    width: $width;
+    height: $height;
+}
+
+/*Gradientes*/
+@mixin gradient($start-color, $mid-color, $color-stop: 50%, $end-color){
+    background-image: linear-gradient(to right, $start-color, $mid-color $color-stop, $end-color);
+}
+@mixin gradient-dir($start-color, $end-color, $deg) {
+    background-image: linear-gradient($deg, $start-color, $end-color);
+}
+
+/*Listas*/
+@mixin list{
+    list-style: none;
+    padding-left: 0;
+}
