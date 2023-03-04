@@ -1,0 +1,42 @@
+//valores por defecto
+html{
+    font-size: 62.5%;
+    -webkit-text-size-adjust: 62.5%;
+    line-height: 1.2;
+}
+body, html{
+    -webkit-font-smoothing: antialiased;
+    width: 100%;
+    min-width: 320px;
+    height: 100%;
+    overflow-x: hidden;
+    overscroll-behavior: none;
+}
+*, :after, :before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+::-webkit-scrollbar-button {
+    width: 0;
+    height: 0;
+}
+::-webkit-scrollbar-corner {
+    background: transparent;
+}
+::-webkit-scrollbar-thumb {
+    background: var(--accent-1);
+    border-radius: 25px;
+}
+::-webkit-scrollbar-track {
+    background: var(--back-claro1);
+    border: none;
+}
+::selection{
+    background: var(--accent-1);
+    color: var(--bs-dark);
+}

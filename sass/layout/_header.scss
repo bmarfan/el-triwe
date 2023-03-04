@@ -1,0 +1,26 @@
+//header fondo
+.header__index{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.header__container{
+    background-image: url(../images/header.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+
+    .container{
+        height: 100%;
+    }
+}
+.marca__logo{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+//navbar
