@@ -19,9 +19,9 @@
 }
 
 //Transparencias
-@mixin box-shadow($color, $opacity){
+@mixin box-shadows($color, $opacity){
     box-shadow: var(--box-shadow) rgb($color, $opacity);
 }
-@mixin text-shadow($color, $opacity){
+@mixin text-shadows($color, $opacity){
     text-shadow: var(--text-shadow) rgb($color, $opacity);
 }

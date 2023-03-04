@@ -4,17 +4,23 @@
     @each $color, $value in $accent{
         --accent-#{$color}: #{$value};
     }
+    @each $color, $value in $accent-rgb{
+        --accent-rgb-#{$color}: #{$value};
+    }
     @each $color, $value in $backround{
         --background-#{$color}: #{$value};
+    }
+    @each $color, $value in $back-rgb{
+        --background-rgb-#{$color}: #{$value};
     }
     @each $color, $value in $dark{
         --dark-#{$color}: #{$value};
     }
+    @each $color, $value in $dark-rgb{
+        --dark-rgb-#{$color}: #{$value};
+    }
     
-    //font
-    
-
     //sombras
-    --box-shadow: #{$box-shadow-px};
-    --text-shadow: #{$text-shadow-px};
+    --box--shadow: #{$box-shadow-px};
+    --text--shadow: #{$text-shadow-px};
 }

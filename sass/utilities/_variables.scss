@@ -16,6 +16,9 @@ $accent: (
     "6": $accent-6
 );
 
+//colores en rgb
+$accent-rgb: map-loop($accent, to-rgb, "$value");
+
 //colores background
 $back-1: #FFFDF6;
 $back-2: #FAF6E9;
@@ -27,6 +30,8 @@ $backround:(
     "secundary": $back-2,
     "tertiary": $back-3,
 );
+//background en rgb
+$back-rgb: map-loop($backround, to-rgb, "$value");
 
 //colores oscuros
 $dark-1: #212529;
@@ -39,6 +44,8 @@ $dark:(
     "back-2": $dark-2,
     "back-3": $dark-3,
 );
+//colores oscuros en rgb
+$dark-rgb: map-loop($dark, to-rgb, "$value");
 
 //Componentes comunes
 //border
