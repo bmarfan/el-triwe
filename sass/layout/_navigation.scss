@@ -1,0 +1,85 @@
+//nav body
+#navbar{
+    @include sizes(100%, 60px);
+    box-shadow: var(--box--shadow) rgba(var(--dark-rgb-back-1), .2);
+    background: linear-gradient(to right, rgba(0, 0, 0, .9) 0%, rgba(var(--accent-rgb-1), .9) 50%, rgba(var(--accent-rgb-3), .9) 100%);
+    margin-top: -60px;
+    position: sticky;
+    top: 0;
+    z-index: 999!important;
+}
+.navbar__container{
+    @include flex(row, center, space-between);
+    width: 100%;
+}
+
+//nav brand
+.navbar-brand{
+    @include flex(row, center, center);
+
+    img{
+        height: 40px;
+    }
+    div{
+        color: var(--bs-white);
+        text-transform: uppercase;
+        padding: 0 20px;
+        text-align: center;
+    }
+    b{
+        display: block;
+        @include font-title(800, normal, 2rem);
+        line-height: 1;
+    }
+    span{
+        @include font-title(300, normal, 1rem);
+        letter-spacing: .05rem;
+    }
+}
+
+//nav links
+.navbar__menu{
+    position: relative;
+    width: 100%;
+
+    ul{
+        @include list;
+        @include flex (row, center, end);
+        width: 100%;
+    }
+    li{
+        padding: 0;
+        margin: 0;
+    }
+    a{
+        color: var(--bs-white);
+        text-decoration: none;
+        overflow: hidden;
+        &:before, &:after, & span:before, & span:after {
+            content: '';
+            position: absolute;
+            transition:.5s ease;
+        }
+    }
+}
+.navbar__link{
+    text-transform: uppercase;
+    padding: 5px 3px;
+    line-height: 1;
+    margin: 0 10px;
+    display: inline-flex;
+    overflow: hidden;
+    position: relative;
+
+    &:before{
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: .1rem;
+        background: var(--bs-white);
+        transform: translateX(-101%);
+    }
+    &:hover:before{
+        transform: translateX(0);
+    }
+}

@@ -10,10 +10,11 @@
 @import 'utilities/variables';
 @import 'utilities/root';
 
+@import 'layout/body';
 @import 'layout/header';
 @import 'layout/navigation';
 @import 'layout/footer';
-@import 'layout/body';
+
 
 @import 'views/ambiental';
 @import 'views/caballos';
