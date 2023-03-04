@@ -1,6 +1,10 @@
 @media (max-width: 1400px){}
 @media (max-width: 1200px){}
-@media (max-width: 998px){}
+@media (max-width: 998px){
+    .navbar__link{
+        margin: 0 2px;
+    }
+}
 @media (max-width: 800px){}
 @media (max-width: 768px){
     //header 
@@ -43,6 +47,9 @@
         }
         ul{
             flex-direction: column;
+        }
+        li{
+            width: 100%;
         }
     }
     .navbar-brand{

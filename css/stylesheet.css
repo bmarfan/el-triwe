@@ -183,7 +183,7 @@ body, html {
   padding: 0;
   margin: 0;
   position: relative;
-  width: 100%;
+  width: fit-content;
 }
 .navbar__menu a {
   color: var(--bs-white);
@@ -277,6 +277,11 @@ body, html {
   top: 3px;
 }
 
+@media (max-width: 998px) {
+  .navbar__link {
+    margin: 0 2px;
+  }
+}
 @media (max-width: 768px) {
   .marca__logo--vertical {
     display: block;
@@ -316,6 +321,9 @@ body, html {
   }
   .navbar__menu ul {
     flex-direction: column;
+  }
+  .navbar__menu li {
+    width: 100%;
   }
   .navbar-brand {
     position: absolute;
