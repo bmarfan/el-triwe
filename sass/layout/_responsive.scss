@@ -1,0 +1,57 @@
+@media (max-width: 1400px){}
+@media (max-width: 1200px){}
+@media (max-width: 998px){}
+@media (max-width: 800px){}
+@media (max-width: 768px){
+    //header 
+    .marca__logo--vertical{
+        display: block;
+        width: 70% !important;
+    }
+    .marca__logo--horizontal{
+        display: none;
+    }
+    //navbar
+    #navbar{
+        position: fixed;
+        top: 0;
+        margin: 0;
+    }
+    
+    .navbar__button{
+        color: #fff;
+        border: none;
+        font-size: 2rem;
+        position: absolute;
+        right: 20px;
+    }
+    .navbar__menu{
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background: var(--background-primary);
+        width: 50%;
+        text-align: right;
+        a{
+            color: var(--accent-1);
+            font-size: 1.4rem;
+            padding: 20px 40px;
+            font-weight: bold;
+            border-bottom: 1px solid;
+            width: 100%;
+            justify-content: end;
+        }
+        ul{
+            flex-direction: column;
+        }
+    }
+    .navbar-brand{
+        position: absolute;
+        left: 40px;
+    }
+}
+@media (max-width: 576px){
+    .navbar__menu{
+        width: 100%;
+    }
+}

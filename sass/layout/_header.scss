@@ -21,4 +21,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    img{
+        width: 100%;
+        max-width: 783px;
+    }
+}
+.marca__logo--horizontal{
+    display: block;
+}
+.marca__logo--vertical{
+    display: none;
 }
