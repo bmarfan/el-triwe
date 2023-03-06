@@ -87,7 +87,7 @@ body, html {
 }
 
 .header__container {
-  background-image: url(../images/header.jpg);
+  background-image: url("../images/prueba1.jpg");
   background-size: cover;
   background-attachment: fixed;
   width: 100%;
