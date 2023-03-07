@@ -18,6 +18,9 @@ body, html{
     margin: 0;
     padding: 0;
 }
+a{
+    text-decoration: none!important;
+}
 ::-webkit-scrollbar {
     width: 5px;
     height: 5px;
@@ -40,4 +43,14 @@ body, html{
 ::selection{
     background: var(--accent-1);
     color: var(--bs-dark);
+}
+
+.section{
+    background: var(--background-primary);
+}
+.section:nth-child(odd){
+    background: var(--background-secundary);
+}
+.section__container{
+    padding: 80px 20px;
 }

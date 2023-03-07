@@ -1,11 +1,68 @@
-@media (max-width: 1400px){}
-@media (max-width: 1200px){}
+@media (max-width: 1400px){
+    //main index
+    .title__intro--top{
+        display: block;
+        margin-bottom: 3rem;
+        text-align: center;
+    }
+    .title__intro--right{
+        display: none;
+    }
+}
+@media (max-width: 1200px){
+    //main index
+    .section__container--intro{
+        .texto__intro--right{
+            padding-top: 0;
+            
+            p:first-child{
+                display: none;
+            }
+        }
+        
+    }
+    .texto__intro--top{
+        display: block;
+        padding: 0 10rem 3rem;
+        p{
+            font-size: 1.4rem;
+        }
+    }
+    .card{
+        font-size: 8px;
+    }
+    .card__title{
+        padding: 20px;
+    }
+    .card__link{
+        top: 20px;
+        right: 20px;
+    }
+}
+//lg
 @media (max-width: 998px){
+    //navbar
     .navbar__link{
         margin: 0 2px;
     }
+    //main index
+    .section__container--quickmenu{
+        .card{
+            font-size: 10px;
+        }
+        .col:first-child{
+            width: 100%;
+        }
+    }
+    .texto__intro--top{
+        padding: 0 1rem 1rem;
+    }
+    .texto__intro--right{
+        padding: 2rem 0 0!important;
+        font-size: 1.4rem;
+    }
 }
-@media (max-width: 800px){}
+//md 
 @media (max-width: 768px){
     //header 
     .marca__logo--vertical{
@@ -56,9 +113,23 @@
         position: absolute;
         left: 40px;
     }
+    .title{
+        font-size: 9px;
+    }
 }
 @media (max-width: 576px){
     .navbar__menu{
         width: 100%;
+    }
+    //index main
+    .section__container--quickmenu{
+        .card{
+            font-size: 8px;
+        }
+    }
+    .title{
+        span{
+            display: none;
+        }
     }
 }

@@ -10,7 +10,8 @@
 @mixin text-shadows($numbers, $color){
     text-shadow: $numbers $color;
 }
-/*Flex box*/
+
+//flex
 @mixin flex($direction, $align, $justify){
     display: flex;
     flex-direction: $direction;
@@ -18,7 +19,7 @@
     align-items: $align;
 }
 
-/*Fonts*/
+//fonts
 @mixin font-title($weight, $style, $size){
     font-weight: $weight;
     font-style: $style;
